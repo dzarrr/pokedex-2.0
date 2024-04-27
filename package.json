@@ -13,7 +13,8 @@
     "postpack": "pinst --enable"
   },
   "lint-staged": {
-    "*.ts": "yarn lint"
+    "*.ts": "yarn lint",
+    "*.tsx": "yarn lint"
   },
   "dependencies": {
     "react": "^18.2.0",
