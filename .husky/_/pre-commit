@@ -1,6 +1,3 @@
 #!/usr/bin/env sh
 . "${0%/*}/h"
-
-yarn run eslint
-
-exit 1
+yarn lint
