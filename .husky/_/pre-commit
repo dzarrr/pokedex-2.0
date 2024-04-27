@@ -2,3 +2,5 @@
 . "${0%/*}/h"
 
 yarn run eslint
+
+exit 1
