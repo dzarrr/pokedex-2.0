@@ -1,6 +1,2 @@
 #!/usr/bin/env sh
-. "${0%/*}/h"
-yarn lint
-yarn testfd
-fdsfdsfadsfd
-fdasfas
+yarn eslint
