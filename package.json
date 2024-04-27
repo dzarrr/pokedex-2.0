@@ -12,10 +12,6 @@
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   },
-  "lint-staged": {
-    "*.ts": "yarn lint",
-    "*.tsx": ["yarn lint", "yarn tsc --noEmit"]
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
