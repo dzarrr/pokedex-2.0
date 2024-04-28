@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Don't change husky config file
+.husky/*
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
