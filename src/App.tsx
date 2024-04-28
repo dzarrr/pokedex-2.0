@@ -1,32 +1,28 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import List from "./pages/List";
+import Detail from "./pages/Detail";
+import Bookmark from "./pages/Bookmark";
+import Compare from "./pages/Compare";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Test</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and safve to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">Tets </p>
-    </>
+    <Router>
+      <Switch>
+        <Route path="/detail/:pokemon">
+          <Detail />
+        </Route>
+        <Route path="/bookmark">
+          <Bookmark />
+        </Route>
+        <Route path="/compare">
+          <Compare />
+        </Route>
+        <Route path="/">
+          <List />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
